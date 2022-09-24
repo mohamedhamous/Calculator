@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 969px;
+  background-image: linear-gradient(100deg, #2c3e50, #27ae60, #2980b9, #e74c3c, #8e44ad);
+  background-size: 400% 969px;
+  background-repeat: no-repeat;
+  -webkit-animation-name: backk;
+          animation-name: backk;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@-webkit-keyframes backk {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes backk {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.main {
+  background-color: rgb(115, 74, 153);
+  text-align: center;
+  width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 20px;
+}
+.main form {
+  padding: 0 5px;
+  margin-bottom: 15px;
+}
+.main form .textview {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  pointer-events: none;
+  box-shadow: 0px 0px 5px 0px black;
+  font-size: 23px;
+  font-weight: bold;
+}
+.main .clearfix::before, .main .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+}
+.main .clearfix .col-3 {
+  width: 25%;
+  padding: 5px;
+  float: left;
+}
+.main .clearfix .col-3 .button {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 0px black;
+  font-size: 20px;
+}
+.main .clearfix .col-3 .top-button {
+  width: 100%;
+  background-color: #6d4b7e;
+  border-color: #d6d6d6;
+  color: #ad3;
+}
+.main .clearfix .col-3 .operator {
+  background-color: #29b2aa;
+  border-color: #d6d6d6;
+  color: #fff;
+  font-size: 20px;
+}
+.main .clearfix .col-31 {
+  width: 37.5%;
+}
+.main .clearfix .col-6 {
+  width: 50%;
+  padding: 5px;
+  float: left;
+}
+.main .clearfix .col-6 .button {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 0px black;
+}
+.main .clearfix .col-6 .equal {
+  background-color: #ad3535;
+  color: #fff;
+  font-size: 22px;
+}
+
+@media (max-width: 420px) {
+  .main {
+    width: 95%;
+  }
+}/*# sourceMappingURL=style.css.map */

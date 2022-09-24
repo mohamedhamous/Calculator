@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 969px;
+    background-image: linear-gradient(100deg,#2c3e50, #27ae60, #2980b9, #e74c3c, #8e44ad);
+    background-size: 400% 969px;
+    background-repeat: no-repeat;
+    animation-name: backk;
+      animation-duration: 15s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+@keyframes backk {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.main{
+    background-color: rgb(115, 74, 153);
+    text-align: center;
+    width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    border-radius: 20px;
+
+    form{
+        padding: 0 5px;
+        margin-bottom: 15px;
+
+        .textview{
+            width: 100%;
+            height: 40px;
+            padding: 0 10px;
+            pointer-events: none;
+            box-shadow: 0px 0px 5px 0px black;
+            font-size: 23px;
+            font-weight: bold;
+        }
+    }
+
+    .clearfix::before, .clearfix::after{
+        content: '';
+        display: table;
+        clear: both;
+        width: 100%;
+
+    }
+    .clearfix{
+
+        .col-3{
+            width: 25%;
+            padding: 5px;
+            float: left;
+
+            .button{
+                width: 100%;
+                height: 40px;
+                outline: none;
+                cursor: pointer;
+                box-shadow: 0px 0px 5px 0px black;
+                font-size: 20px;
+                
+            }
+
+            .top-button{
+                width: 100%;
+                background-color: #6d4b7e;
+                border-color:#d6d6d6 ;
+                color: #ad3;
+            }
+
+            .operator{
+                background-color: #29b2aa;
+                border-color: #d6d6d6;
+                color: #fff;
+                font-size: 20px;
+            }
+        }
+        .col-31{
+            width: 37.5%;
+        }
+        .col-6{
+            width: 50%;
+            padding: 5px;
+            float: left;
+
+            .button{
+                width: 100%;
+                height: 40px;
+                outline: none;
+                cursor: pointer;
+                box-shadow: 0px 0px 5px 0px black;
+            }
+
+            .equal{
+                background-color: #ad3535;
+                color: #fff;
+                font-size: 22px;
+
+            }
+        }
+    }
+}
+@media (max-width:420px){
+    .main{
+        width: 95%;
+    }
+}
